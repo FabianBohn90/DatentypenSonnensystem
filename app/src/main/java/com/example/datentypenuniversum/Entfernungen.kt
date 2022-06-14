@@ -7,7 +7,6 @@ class Entfernungen {
     fun distanceToEarth(): MutableList<Number> {
 
         // Entfernungen zur Erde in km
-        // todo Schreibe hier deinen Code
         val merkur: Int = 77300000
         val venus: Int = 38200000
         val mond: Int = 360000
@@ -20,11 +19,9 @@ class Entfernungen {
         val neptun:Float = 4305900000f
 
         // Erstelle eine veränderbare Liste
-        // todo Schreibe hier deinen Code
         val listDTE = mutableListOf<Number>()
 
         // Füge die Entfernungen hinzu
-        // todo Schreibe hier deinen Code
         listDTE.add(merkur)
         listDTE.add(venus)
         listDTE.add(mond)
@@ -49,11 +46,9 @@ class Entfernungen {
         val ae = 149597870.7
 
         // Erstelle eine veränderbare Liste
-        // todo Schreibe hier deinen Code
         var listDTS: MutableList<Number> = mutableListOf()
 
         // Berechne die Entfernungen in AE
-        // todo Schreibe hier deinen Code
         val merkurDTS = (distances[0].toDouble() / ae)
         val venusDTS = (distances[1].toDouble() / ae)
         val mondDTS = (distances[2].toDouble() / ae)
@@ -66,7 +61,6 @@ class Entfernungen {
         val neptunDTS = (distances[9].toDouble() / ae)
 
         // Runde die Entfernungen auf 2 Nachkommastellen
-        // todo Schreibe hier deinen Code
 
         val merkurAE = (merkurDTS*100).toInt().toFloat()/100
         val venusAE = (venusDTS*100).toInt().toFloat()/100
@@ -80,7 +74,6 @@ class Entfernungen {
         val neptunAE = (neptunDTS*100).toInt().toFloat()/100
 
         // Füge die Entfernungen in die Liste ein
-        // todo Schreibe hier deinen Code
         listDTS.add(merkurAE)
         listDTS.add(venusAE)
         listDTS.add(mondAE)
